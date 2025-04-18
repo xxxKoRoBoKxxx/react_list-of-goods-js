@@ -86,9 +86,7 @@ export const App = () => {
           <button
             key={SORT_RESET}
             type="button"
-            className={classNames('button', 'is-danger', {
-              'is-light': sortField !== SORT_RESET,
-            })}
+            className={classNames('button', 'is-danger', 'is-light')}
             onClick={() => {
               setSortField('');
               setReversed(false);
